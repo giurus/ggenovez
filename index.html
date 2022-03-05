@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="./assets/logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/logo-120x120.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/logo-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/logo-16x16.png"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" media="(max-width: 991px)" />
+    <script src="https://kit.fontawesome.com/d1eead6f39.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Giuseppe Genovez / Software Developer</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__logo">
+          <p class="navbar__title">
+            <a href="#">GS</a>
+          </p>
+        </div>
+        <div class="navbar__menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__link active" data-ref="home">
+            <a href="#home">Home</a>
+          </li>
+          <li class="navbar__link" data-ref="about">
+            <a href="#about">About</a>
+          </li>
+          <li class="navbar__link" data-ref="skills">
+            <a href="#skills">My skills</a>
+          </li>
+          <li class="navbar__link" data-ref="portfolio">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="navbar__link" data-ref="contact">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="home">
+      <div class="home__background"></div>
+      <picture>
+        <source type="image/webp" srcset="./assets/giuseppe.webp" />
+        <source type="image/jpeg" srcset="./assets/giuseppe.jpg" />
+        <img class="home__profile" alt="picture profile" />
+      </picture>
+      <div class="home__description">
+        <span class="home__title--primary">Hi!</span>
+        <h1 class="home__title">I'm Giuseppe Genovez</h1>
+        <span class="home__title--secondary">Software Developer</span>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2 class="section__title">About me</h2>
+        <div class="about__grid">
+          <div class="about__description">
+            <h2>I'm Giuseppe Genovez, Software Developer.</h2>
+            <p>
+              I specialize in web development using mainly technologies such as Javascript.
+            </p>
+
+            <p>
+              I am a responsible, capable, creative person, who is always looking to learn new things, new technologies, that can be useful both personally and professionally.
+            </p>
+            <!--href example:  ./assets/cv.pdf -->
+            <a
+              class="button--cta"
+              href="#"
+              download="Jose Estrada CV"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <i class="fa-solid fa-download"></i>Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="skills">
+      <div class="container">
+        <h2 class="section__title">My skills</h2>
+        <div class="section__skills">
+          <div class="skill__item">
+            <i class="fa-brands fa-js"></i>
+            <div class="skill__name">JavaScript</div>
+          </div>
+          <div class="skill__item">
+            <i class="fa-brands fa-react"></i>
+            <div class="skill__name">React.js</div>
+          </div>
+          <div class="skill__item">
+            <i class="fa-brands fa-php"></i>
+            <div class="skill__name">PHP</div>
+          </div>
+          <div class="skill__item">
+            <img src="./assets/java.png" alt="Java icon"/>
+            <div class="skill__name">Java</div>
+          </div>
+          <div class="skill__item">
+            <i class="fa-brands fa-bootstrap"></i>
+            <div class="skill__name">Bootstrap</div>
+          </div>
+          <div class="skill__item">
+            <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB icon"/>
+            <div class="skill__name">MongoDB</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section__title">Portfolio</h2>
+        <h3 class="section__subtitle">Here you can see the projects I have worked on.</h3>
+        <div class="portfolio__grid">
+          <div class="portfolio__item">
+            <picture>
+              <source type="image/jpeg" srcset="./projects/Anafer.jfif" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Anafer Mascotas</h3>
+              <p class="portfolio__description--text">
+                Web Application: Php, JavaScript
+              </p>
+              <div class="buttons__container">
+                <a class="button" href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-globe"></i> Website
+                </a>
+                <a class="button" href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <source type="image/jpeg" srcset="./projects/Petgram.jfif" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Petgram</h3>
+              <p class="portfolio__description--text">
+                Web Application: REACT
+              </p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+                <a
+                  class="button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <source type="image/jpeg" srcset="./projects/Platzi-video.jfif" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Platzi Video</h3>
+              <p class="portfolio__description--text">
+                Web Application: REACT, JS, SCSS
+              </p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+                <a
+                  class="button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <h3 class="section__subtitle">
+          Contact me if you want us to work together.
+        </h3>
+        <div class="contact__grid">
+          <a href="mailto:gagenovez@outlook.com" target="_blank" rel="noopener noreferrer">
+            <div class="contact__item">
+              <i class="fa-regular fa-envelope"></i>
+              <p>Mail Me</p>
+            </div>
+          </a>
+          <a href="https://github.com/giurus" target="_blank" rel="noopener noreferrer">
+            <div class="contact__item">
+              <i class="fa-brands fa-github"></i>
+              <p>Follow Me</p>
+            </div>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="contact__item">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <p>Contact Me</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Copyright © 2022. <a href="#">@giurus</a> <br />
+          All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script async src="./index.js"></script>
+  </body>
+</html>
